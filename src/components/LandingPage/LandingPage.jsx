@@ -1,19 +1,20 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
-import '../css/DropDown.css'
+import './LandingPage.css'
 
 
-const DropDown = () => {
+const LandingPage = () => {
     return (
-        <div className='introText'>
+        <div className='landing-container'>
+            <div className='intro-text'>
               <div className='landing-icons'>
-                 <a href="#" className='icon-1'>
-                    <i class="fab fa-facebook-square"></i>
+                 <a href=" http://m.me/brob424" target='_blank' className='icon-1'>
+                    <i class="fab fa-facebook-messenger"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/brob424/" target='_blank' className='icon-2' rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/brob424/" target='_blank' className='icon-2' rel='noopener noreferrer'>
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="#" className='icon-3'>
+                <a href="https://github.com/Brob424" target='_blank' className='icon-3' rel='noopener noreferrer'>
                     <i class="fab fa-github-square "></i>
                 </a>
               </div>
@@ -40,13 +41,14 @@ const DropDown = () => {
               </div>
                <h3 className='arrow-text'>Get Start</h3>
               <div className='arrow-scroll'>
-                 <a href="#"> <div className='arrow'></div>
+                 <a href="AboutMe"> <div className='arrow'></div>
                   <div className='arrow'></div>
                   <div className='arrow'></div>
                   </a>
               </div>
+            </div>
         </div>
     )
 }
 
-export default DropDown
+export default LandingPage
