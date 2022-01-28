@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Typewriter from 'typewriter-effect'
+import AboutMe from '../AboutMe/AboutMe'
 import './LandingPage.css'
 
 
@@ -41,10 +43,10 @@ const LandingPage = () => {
               </div>
                <h3 className='arrow-text'>Get Start</h3>
               <div className='arrow-scroll'>
-                 <a href="AboutMe"> <div className='arrow'></div>
+                 <Link to={<AboutMe />}> <div className='arrow'></div>
                   <div className='arrow'></div>
                   <div className='arrow'></div>
-                  </a>
+                  </Link>
               </div>
             </div>
         </div>

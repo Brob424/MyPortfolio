@@ -1,0 +1,18 @@
+.navbar-container {
+  background-color: #919191;
+  display: flex;
+}
+
+ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 5px;
+}
+
+.navbar,
+a {
+  font-size: 30px;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-decoration: none;
+}
