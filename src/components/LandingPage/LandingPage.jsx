@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, animateScroll } from 'react-scroll'
 import Typewriter from 'typewriter-effect'
-import AboutMe from '../AboutMe/AboutMe'
 import './LandingPage.css'
+
 
 
 const LandingPage = () => {
@@ -10,13 +10,13 @@ const LandingPage = () => {
         <div className='landing-container'>
             <div className='intro-text'>
               <div className='landing-icons'>
-                 <a href=" http://m.me/brob424" target='_blank' className='icon-1'>
+                 <a href=" http://m.me/brob424" target='_blank' className='landing-item'>
                     <i class="fab fa-facebook-messenger"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/brob424/" target='_blank' className='icon-2' rel='noopener noreferrer'>
+                <a href="https://www.linkedin.com/in/brob424/" target='_blank' className='landing-item' rel='noopener noreferrer'>
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/Brob424" target='_blank' className='icon-3' rel='noopener noreferrer'>
+                <a href="https://github.com/Brob424" target='_blank' className='landing-item' rel='noopener noreferrer'>
                     <i class="fab fa-github-square "></i>
                 </a>
               </div>
@@ -41,13 +41,14 @@ const LandingPage = () => {
                   />
                   <span><h2 className='title-statement'>A Reliable Software Developer ready to make your next website</h2></span>
               </div>
-               <h3 className='arrow-text'>Get Start</h3>
+               <h3 className='arrow-text'>Let's Get Start</h3>
+              <Link activeClass='active' to='about-me' spy={true} smooth={true} offset={-210} duration={1000}>
               <div className='arrow-scroll'>
-                 <Link to={<AboutMe />}> <div className='arrow'></div>
                   <div className='arrow'></div>
                   <div className='arrow'></div>
-                  </Link>
-              </div>
+                  <div className='arrow'></div>   
+               </div>
+               </Link>
             </div>
         </div>
     )

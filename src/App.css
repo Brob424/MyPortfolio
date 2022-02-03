@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #66ccff;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -10,16 +14,25 @@
 
 .app {
   height: 100vh;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Mulish', sans-serif;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.containers {
+  background-color: #4e4f50;
 }
 
 .containers > * {
   width: 100%;
   height: 100vh;
   position: relative;
-  scroll-snap-type: y mandatory;
+  scroll-snap-align: start;
 }
 
-.containers::-webkit-scrollbar {
-  display: none;
+.containers .app-nav {
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
