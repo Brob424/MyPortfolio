@@ -1,6 +1,7 @@
 .about-me-container {
   width: 100%;
   height: 100vh;
+  padding: 20px;
   background: linear-gradient(to bottom, #ff9966 50%, #fff 80%);
 }
 

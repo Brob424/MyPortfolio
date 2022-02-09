@@ -18,6 +18,10 @@ const App = () => {
     Aos.init({duration: 1700 });
 
   }, [])
+
+  window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
     
 
 

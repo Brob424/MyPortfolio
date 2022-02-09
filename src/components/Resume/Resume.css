@@ -3,6 +3,7 @@
   height: 100vh;
   background: linear-gradient(to right bottom, #ff9966 50%, #fff 70%);
   text-align: center;
+  padding: 20px;
 }
 
 .resume-title {
