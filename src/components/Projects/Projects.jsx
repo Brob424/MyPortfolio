@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
-import './Project.css'
 import ScrollingLogo from '../ScrollingLogos/ScrollingLogo'
 import ProjectModal from '../ProjectModal/ProjectModal'
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import './Project.css'
 
 const Projects = () => {
     const [isOpen, setIsOpen] = useState(false);
-
-
+    
+    isOpen ? disableBodyScroll(document) : enableBodyScroll(document)
 
     return (
  <div className='projects-container' id='projects'>
