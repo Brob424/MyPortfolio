@@ -42,7 +42,7 @@ const LandingPage = () => {
                   <span><h2 className='title-statement'>A Reliable Software Developer ready to make your next website</h2></span>
               </div>
                <h3 className='arrow-text'>Let's Get Start</h3>
-              <Link activeClass='active' to='about-me' spy={true} smooth={true} offset={-210} duration={1000}>
+              <Link to='about-me' spy={true} smooth={true} offset={-50} duration={1000}>
               <div className='arrow-scroll'>
                   <div className='arrow'></div>
                   <div className='arrow'></div>

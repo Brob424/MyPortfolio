@@ -1,17 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ScrollingLogo from '../ScrollingLogos/ScrollingLogo'
 import ProjectModal from '../ProjectModal/ProjectModal'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import './Project.css'
 
 const Projects = () => {
+          useEffect(() => {
+    Aos.init({duration: 3000 });
+
+  }, [])
+
+
     const [isOpen, setIsOpen] = useState(false);
     
     isOpen ? disableBodyScroll(document) : enableBodyScroll(document)
 
     return (
  <div className='projects-container' id='projects'>
-     {isOpen && <ProjectModal closeModal={setIsOpen} />}
+     <div data-aos="fade-up">
+           {isOpen && <ProjectModal closeModal={setIsOpen} />}
             <h1 className='projects-title'>Projects</h1>
             <div class="cards">
                 <div className='card-item card-1' onClick={() => {setIsOpen(true)}}>
@@ -30,9 +39,9 @@ const Projects = () => {
                 <p className='card-description'>Card Description</p>
             </div>
         </div>
-        
-        <ScrollingLogo />
-    </div>
+     </div>
+     <ScrollingLogo />
+ </div>
 
   )
 }

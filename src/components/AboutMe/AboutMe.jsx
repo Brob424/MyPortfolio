@@ -1,9 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import './AboutMe.css'
 
 const AboutMe = () => {
+      useEffect(() => {
+    Aos.init({duration: 3000 });
+
+  }, [])
+
+
     return (
         <div className='about-me-container' id='about-me'>
+          <div data-aos="fade-up">
             <div className='about-me'>
                 <div>
                     <h1 className='about-me-title'>About Me</h1>
@@ -18,6 +27,7 @@ const AboutMe = () => {
                 </div>
               </div>
             </div>
+          </div>
         </div>
     )
 }

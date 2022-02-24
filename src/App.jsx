@@ -1,12 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import AboutMe from './components/AboutMe/AboutMe'
 import LandingPage from './components/LandingPage/LandingPage'
 import NavBar from './components/NavBar/NavBar'
 import Projects from './components/Projects/Projects'
 import Resume from './components/Resume/Resume'
 import Contact from './components/Contact/Contact'
-import Aos from 'aos';
-import 'aos/dist/aos.css'
 import './App.css'
 
 
@@ -14,14 +12,12 @@ import './App.css'
 
 
 const App = () => {
-  useEffect(() => {
-    Aos.init({duration: 1700 });
 
-  }, [])
 
   window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
+
     
 
 
@@ -29,19 +25,19 @@ const App = () => {
     <div className='app'>
       <div className='containers'> 
       <LandingPage />
-      <div data-aos='zoom-in' className='app-nav'>
+      <div className='app-nav'>
         <NavBar />
       </div> 
-        <div data-aos='zoom-in'>
+        <div>
           <AboutMe />
         </div>
-        <div data-aos='zoom-in'>
+        <div>
           <Projects />      
         </div>
-        <div data-aos='zoom-in'>
+        <div>
           <Resume />
         </div>
-        <div data-aos='zoom-in'>
+        <div>
           <Contact />
         </div>
        </div>

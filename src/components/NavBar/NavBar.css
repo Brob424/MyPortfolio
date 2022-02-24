@@ -1,4 +1,4 @@
-.navbar-container {
+.navbar {
   background-color: #919191;
   display: flex;
   width: 100%;
@@ -12,22 +12,24 @@ ul {
   padding: 5px;
 }
 
-.navbar-container,
+.navbar,
 .nav-item {
   justify-content: space-around;
   align-items: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.15rem;
   padding: 15px;
   color: #66d3fa;
+}
+
+.navbar .nav-items .active {
+  padding-bottom: 12px;
   cursor: pointer;
-}
-
-.navbar-container .nav-item:hover {
-  padding-bottom: 10px;
   border-bottom: 3px solid var(--primary-color);
 }
 
-.navbar-container .nav-item .active {
-  border-bottom: 3px solid var(--primary-color);
+.navbar .nav-item:hover {
+  padding-bottom: 12px;
+  cursor: pointer;
+  color: #00539cff;
 }
