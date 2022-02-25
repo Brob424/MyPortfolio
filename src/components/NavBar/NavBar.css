@@ -20,6 +20,7 @@ ul {
   font-size: 1.15rem;
   padding: 15px;
   color: #66d3fa;
+  user-select: none;
 }
 
 .navbar .nav-items .active {

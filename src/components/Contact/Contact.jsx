@@ -5,7 +5,7 @@ import './Contact.css'
 
 const Contact = () => {
               useEffect(() => {
-    Aos.init({duration: 3000 });
+    Aos.init({duration: 2000 });
 
   }, [])
 
