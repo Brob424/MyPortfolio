@@ -2,7 +2,7 @@ import React from 'react'
 
 const Employment = () => {
   return (
-    <div className='employment-contaniner' id='employment'>
+    <div className='employment-container' id='employment'>
         <h2>Employment History</h2>
         <h3>`Pharmacy Specialist, Correctional Health Services(PANGY), Elmhurst,NY`</h3>
         <p>April 2012 - Present</p>
