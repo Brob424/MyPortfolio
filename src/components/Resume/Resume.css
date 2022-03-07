@@ -26,6 +26,7 @@
   grid-template-rows: 80%;
   gap: 2rem;
   width: 80%;
+  user-select: none;
 }
 
 .res-grid-1 {
@@ -70,10 +71,10 @@
 .resume-items {
   padding: 12.5px 0;
   color: #66d3fa;
+  cursor: pointer;
 }
 
 .resume-items a {
-  width: 100%;
   text-decoration: none;
   color: inherit;
 }
@@ -82,4 +83,18 @@
   background-color: #66d3fa;
   color: #fff;
   border-radius: 30px;
+}
+
+.resume-download-btn {
+  margin-top: 75%;
+}
+
+.resume-download-btn button {
+  width: 80%;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: #66d3fa;
+  color: #fff;
+  font-size: 100%;
 }

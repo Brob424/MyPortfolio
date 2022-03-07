@@ -2,9 +2,9 @@ import React from 'react'
 
 const Employment = () => {
   return (
-    <div className='employment-container' id='employment'>
+    <div className='resume-body employment-container' id='employment'>
         <h2>Employment History</h2>
-        <h3>`Pharmacy Specialist, Correctional Health Services(PANGY), Elmhurst,NY`</h3>
+        <h3>'Pharmacy Specialist, Correctional Health Services(PANGY), Elmhurst,NY'</h3>
         <p>April 2012 - Present</p>
         <ul>
             <li>Distributes medication that has been checked and approved by the pharmacist to the correctly identified patient for self-administration in the proper way and at the proper time.</li>
