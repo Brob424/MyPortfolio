@@ -1,7 +1,13 @@
 import React, {useEffect} from 'react'
+import { Link } from 'react-router-dom'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import './Resume.css'
+import Profile from './Profile';
+import Employment from './Employment';
+
+
+
 const Resume = () => {
        useEffect(() => {
     Aos.init({duration: 2000 });
@@ -17,15 +23,31 @@ const Resume = () => {
                 <h1 className='resume-title'>Resume</h1>
                 <div className='resume-grid'>
                     <div className='res-grid-1'>
-                        <h3>Brandon Robinson</h3>
-                        <nav>
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </nav>
+                       <div className='resume-sidebar'>
+                           <div className='resume-list'>
+                            <h3>Brandon Robinson</h3>
+                            <nav className='resume-list-container'>
+                                <div className='resume-items'>
+                                    <Link to='profile'>Profile</Link>
+                                </div>
+                                <div className='resume-items'>
+                                    <Link to='employment'>Employment</Link>
+                                </div>
+                                <div className='resume-items'>
+                                    <Link to='education'>Education</Link>
+                                </div>
+                                <div className='resume-items'>
+                                    <Link to='intership'>Intership</Link>
+                                </div>
+                                <div className='resume-items'>
+                                    <Link to='references'>References</Link>
+                                </div>                       
+                            </nav>
+                            </div>
+                       </div>
                     </div>
                     <div className='res-grid-2'>
-                        <h2>This is box 2</h2>
+                        <Profile />
                     </div>
                 </div>
             </div>

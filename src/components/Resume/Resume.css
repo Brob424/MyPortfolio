@@ -29,11 +29,16 @@
 }
 
 .res-grid-1 {
+  position: relative;
   width: 15vw;
   height: 70vh;
   background-color: #fff;
   border-radius: 30px;
   border: 3px solid #66d3fa;
+}
+
+.resume-list {
+  padding: 20px;
 }
 
 .res-grid-2 {
@@ -42,4 +47,39 @@
   background-color: #fff;
   border-radius: 30px;
   border: 3px solid #66d3fa;
+  position: relative;
+}
+
+.resume-body {
+  height: 80vh;
+  line-height: 2.7;
+  inline-size: 90%;
+  padding: 3% 8%;
+  position: absolute;
+  transform: translate(5%, 0%);
+}
+
+.resume-list {
+  height: 100vh;
+}
+
+.resume-list-container {
+  margin-top: 60px;
+}
+
+.resume-items {
+  padding: 12.5px 0;
+  color: #66d3fa;
+}
+
+.resume-items a {
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.resume-items:hover {
+  background-color: #66d3fa;
+  color: #fff;
+  border-radius: 30px;
 }
