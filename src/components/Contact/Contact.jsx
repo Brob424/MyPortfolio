@@ -32,19 +32,27 @@ const Contact = () => {
                 <h1 className='contact-title'>Contact</h1>
             </div>
             <div className='contact-form'>
-                <form ref={form} onSubmit={sendEmail}>
-                    <div>
-                    <label>Name</label>
-                    <input type="text" name="user_name" />
+                <form className='form-list' ref={form} onSubmit={sendEmail}>
+                    <div className='form-items'>
+                    <div className='form-label'>
+                        <label>Name</label>
                     </div>
-                    <div>
-                    <label>Email</label>
-                    <input type="email" name="user_email" />
+                        <input type="text" name="user_name" placeholder='Enter Your Name'/>
                     </div>
+                    <div className='form-items'>
+                    <div className='form-label'>
+                        <label>Email</label>
+                    </div>
+                        <input type="email" name="user_email"  placeholder='Enter Your Email'/>
+                    </div>
+                    <div className='form-items'>
+                    <div className='form-label'>
+                        <label>Message</label>
+                    </div>
+                        <textarea name="message" rows="10" placeholder='Enter Your Message'/>
                     <div>
-                    <label>Message</label>
-                    <textarea name="message" />
-                    <input type="submit" value="Send" />
+                       <button input type="submit" value="Send">Send</button>
+                    </div>
                     </div>
                 </form>
             </div>
