@@ -68,8 +68,7 @@ const Resume = () => {
                                 <Route exact path='/education' element={<Education />}></Route>
                                 <Route exact path='/internship' element={<Internship />}></Route>
                                 <Route exact path='/references' element={<References />}></Route>
-                            </Routes>
-                            
+                            </Routes>                          
                     </div>
                 </div>
             </div>

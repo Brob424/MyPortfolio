@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll'
+import { Routes, Route } from 'react-router-dom'
 import './NavBar.css'
 
 const NavBar = () => {

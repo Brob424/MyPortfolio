@@ -94,7 +94,17 @@
   height: 50px;
   border-radius: 30px;
   border: none;
-  background-color: #66d3fa;
-  color: #fff;
+  background-color: #fff;
+  border: 2px solid #66d3fa;
+  color: #66d3fa;
   font-size: 100%;
+  cursor: pointer;
+}
+
+.resume-download-btn button:hover {
+  background-color: #66d3fa;
+  border: none;
+  color: #fff;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
 }

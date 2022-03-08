@@ -1,4 +1,3 @@
-import React from 'react'
 import AboutMe from './components/AboutMe/AboutMe'
 import LandingPage from './components/LandingPage/LandingPage'
 import NavBar from './components/NavBar/NavBar'
@@ -12,8 +11,6 @@ import './App.css'
 
 
 const App = () => {
-
-
   window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
