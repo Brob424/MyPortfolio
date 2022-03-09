@@ -38,21 +38,20 @@ const Contact = () => {
             <div data-aos='fade-up'>
                 {popUp && <PopUpModal closeModal={setPopUp} />}
                  <h1 className='contact-title'>Contact</h1>
-            </div>
-            < div className='contact-form'>
+                 < div className='contact-form'>
                 <h2>Get in contact, and lets talk...</h2>
                 <form className='form-list' ref={form} onSubmit={sendEmail}>
                     <div className='form-items'>
                     <div className='form-label'>
                         <label>Subject</label>
                     </div>
-                        <input type="text" name="subject" placeholder='Enter subject'required/>
+                        <input type="text" name="subject" placeholder='Enter subject'/>
                     </div>
                     <div className='form-items'>
                     <div className='form-label'>
                         <label>Name</label>
                     </div>
-                        <input type="text" name="name" placeholder='Enter Your Name'required/>
+                        <input type="text" name="name" placeholder='Enter Your Name'/>
                     </div>
                     <div className='form-items'>
                     <div className='form-label'>
@@ -70,6 +69,7 @@ const Contact = () => {
                     </div>
                     </div>
                 </form>
+            </div>
             </div>
         </div>
     )
