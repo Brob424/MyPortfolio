@@ -6,8 +6,12 @@ import './LandingPage.css'
 
 
 const LandingPage = () => {
+
+
+
     return (
         <div className='landing-container'>
+           
             <div className='intro-text'>
               <div className='landing-icons'>
                  <a href=" http://m.me/brob424" target='_blank' className='landing-item'>

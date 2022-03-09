@@ -4,7 +4,9 @@ const References = () => {
   return (
     <div className='resume-body' id='references'>
         <h2>References</h2>
-        <p><strong>References available upon request</strong></p>
+      <div className='reference-text'>  
+        <p>References available upon request</p>
+      </div>
     </div>
   )
 }

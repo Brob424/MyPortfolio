@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../logo/logo.png'
 import { Link } from 'react-scroll'
 import { Routes, Route } from 'react-router-dom'
 import './NavBar.css'
@@ -7,6 +8,7 @@ const NavBar = () => {
     return (
         <div className='navbar' id='navbar'>
             <nav>
+                <img className='logo' src={logo} alt="" /> 
                 <ul className='nav-items'>
                     <Link className='nav-item' activeClass="active" to='about-me' spy={true} smooth={true} offset={-50} duration={1000}>About Me</Link>
                     <Link className='nav-item' activeClass="active" to='projects' spy={true} smooth={true} offset={-50} duration={1000}>Projects</Link>

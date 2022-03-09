@@ -57,8 +57,7 @@ const Resume = () => {
                             <div className='resume-download-btn'>
                                  <button onClick={saveFile}>Download</button>
                             </div>
-                            </div>
-                           
+                          </div>    
                        </div>
                     </div>
                     <div className='res-grid-2'>

@@ -108,3 +108,18 @@
   transform: scale(1.1);
   transition: all 0.3s ease-in;
 }
+
+.internship-text {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.reference-text {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 1.5rem;
+}
