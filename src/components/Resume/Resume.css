@@ -69,7 +69,6 @@
 }
 
 .resume-items {
-  padding: 12.5px 0;
   color: #66d3fa;
   cursor: pointer;
 }
@@ -79,14 +78,24 @@
   color: inherit;
 }
 
-.resume-items:hover {
+.resume-items button {
+  width: 80%;
+  height: 50px;
+  color: #66d3fa;
+  border: none;
+  font-size: 16px;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.resume-items button:hover {
   background-color: #66d3fa;
   color: #fff;
   border-radius: 30px;
 }
 
 .resume-download-btn {
-  margin-top: 75%;
+  margin-top: 65%;
 }
 
 .resume-download-btn button {

@@ -39,19 +39,19 @@ const Resume = () => {
                             <h3>Brandon Robinson</h3>
                             <nav className='resume-list-container'>
                                 <div className='resume-items'>
-                                    <Link to='/profile'>Profile</Link>
+                                    <Link to='/profile'><button>Profile</button></Link>
                                 </div>
                                 <div className='resume-items'>
-                                    <Link to='/employment'>Employment</Link>
+                                    <Link to='/employment'><button>Employment</button></Link>
                                 </div>
                                 <div className='resume-items'>
-                                    <Link to='education'>Education</Link>
+                                    <Link to='education'><button>Education</button></Link>
                                 </div>
                                 <div className='resume-items'>
-                                    <Link to='internship'>Internship</Link>
+                                    <Link to='internship'><button>Internship</button></Link>
                                 </div>
                                 <div className='resume-items'>
-                                    <Link to='references'>References</Link>
+                                    <Link to='references'><button>References</button></Link>
                                 </div>                       
                             </nav>
                             <div className='resume-download-btn'>
