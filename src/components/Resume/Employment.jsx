@@ -16,7 +16,6 @@ const Employment = () => {
           <div>
             <li>Maintain patient confidentiality of all pharmacy and clinical information while exhibiting proper record keeping and control procedures.</li>
           </div>
-            
         </ul>
     </div>
   )

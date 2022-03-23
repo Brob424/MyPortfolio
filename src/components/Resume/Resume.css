@@ -60,6 +60,11 @@
   transform: translate(5%, 0%);
 }
 
+.education-container {
+  height: 80px;
+  line-height: 1.75;
+}
+
 .resume-list {
   height: 100vh;
 }

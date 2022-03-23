@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "brandon-s-portfolio"
-  }
+    "default": "brandons-project-portfolio"
+  },
+  "targets": {}
 }
