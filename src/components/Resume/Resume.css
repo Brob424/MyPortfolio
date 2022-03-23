@@ -53,17 +53,16 @@
 
 .resume-body {
   height: 80vh;
-  line-height: 2.7;
+  line-height: 1.85;
   inline-size: 90%;
   padding: 3% 8%;
   position: absolute;
   transform: translate(5%, 0%);
 }
 
-.education-container {
-  height: 80px;
+/* .education-container {
   line-height: 1.75;
-}
+} */
 
 .resume-list {
   height: 100vh;
